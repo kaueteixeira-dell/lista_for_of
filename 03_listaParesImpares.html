@@ -6,11 +6,25 @@
     //Separe os números pares e os números ímpares em listas distintas e apresente as listas de forma crescente e forma descrescente.
 
     //ENTRADA
-
+    const numeros = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+    let pares = [];
+    let impares = [];
 
     //PROCESSAMENTO
+    for (let n of numeros) {
+        if (n % 2 === 0) {
+            pares.push(n);
+        }
+        else if (n % 2 === 1) {
+            impares.push(n);
+        }
+        else {
+            alert(`Inválido!`);
+        }
 
-
+    }    
+    
     //SAÍDA
-
+    document.write("Os números pares serão respectivamente:", pares);
+    document.write("Os números ímpares serão respectivamente:", impares);
 </script>

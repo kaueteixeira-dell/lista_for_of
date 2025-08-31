@@ -10,14 +10,13 @@
     
     //PROCESSAMENTO
     let listaPares = [];
+    let listaImpares = [];
 
     for (let numero of listaDeNumeros) {
-        if (numero % 2 == 0){
-            listaPares.push(numero);
-        }
-        alert(listaPares);
+        (numero % 2 === 0) ? listaPares.push(numero) : listaImpares.push(numero);
     }
 
     //SAÍDA
-
+    console.log(listaImpares);
+    console.log(listaPares);
 </script>

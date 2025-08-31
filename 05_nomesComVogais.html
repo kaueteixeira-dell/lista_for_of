@@ -6,9 +6,20 @@
     //Identifique os nomes que começam com qualquer vogal (A, E, I, O, U) e apresente os nomes em ordem alfabética.
 
     //ENTRADA
+    let listaDeNomes = ["Amanda", "Eduardo", "Fábio", "Evelin", "César", "José", "Ivo", "Eva", "Otávio", "Inez", "Osmar", "Ulisses"];
 
-    //PROCESSAMENTO
+    //PROCESSAMENTO 
+    let listaAtualizada = [];
 
+    for (let nome of listaDeNomes) {
+        let primeiraLetra = nome[0].toUpperCase();
+
+        if ("AEIOU".includes(primeiraLetra)) {
+            listaAtualizada.push(nome);
+            document.write(listaAtualizada.join(", "));
+        }
+    }
+    
     //SAÍDA
-
+    
 </script>
